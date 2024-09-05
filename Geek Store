@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geek Store</title>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #1a1a1a;
+            color: #fff;
+        }
+
+        header {
+            background-color: #121212;
+            color: #00c853;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+            font-family: 'Press Start 2P', cursive;
+        }
+
+        nav {
+            background-color: #212121;
+            overflow: hidden;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        nav a {
+            float: left;
+            display: block;
+            color: #fff;
+            text-align: center;
+            padding: 16px 25px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #383838;
+        }
+
+        .hero {
+            background-image: url('https://via.placeholder.com/1200x400'); /* Substitua por uma imagem geek */
+            background-size: cover;
+            background-position: center;
+            padding: 100px 20px;
+            text-align: center;
+            color: #00e676;
+        }
+
+        .hero h2 {
+            font-size: 48px;
+            margin: 0;
+            font-family: 'Press Start 2P', cursive;
+        }
+
+        .content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .card {
+            background-color: #2e2e2e;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            transition: transform 0.3s, box-shadow 0.3s;
+            text-align: center;
+        }
+
+        .card img {
+            max-width: 100%;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+
+        .card h3 {
+            font-size: 24px;
+            margin-top: 0;
+            font-family: 'Press Start 2P', cursive;
+        }
+
+        .card p {
+            line-height: 1.6;
+            color: #bbb;
+        }
+
+        .card .price {
+            font-size: 22px;
+            color: #00c853;
+            margin-top: 10px;
+        }
+
+        .card button {
+            background-color: #00c853;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            color: #fff;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            margin-top: 15px;
+        }
+
+        .card button:hover {
+            background-color: #00e676;
+        }
+
+        footer {
+            background-color: #121212;
+            color: #bbb;
+            text-align: center;
+            padding: 20px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .social-icons {
+            margin-top: 10px;
+        }
+
+        .social-icons a {
+            color: #00e676;
+            text-decoration: none;
+            margin: 0 10px;
+            transition: color 0.3s;
+        }
+
+        .social-icons a:hover {
+            color: #1da1f2; /* Exemplo de cor de destaque */
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Geek Store</h1>
+</header>
+
+<nav>
+    <a href="#home">Início</a>
+    <a href="#produtos">Produtos</a>
+    <a href="#promocoes">Promoções</a>
+    <a href="#novidades">Novidades</a>
+    <a href="#contato">Contato</a>
+</nav>
+
+<section class="hero">
+    <h2>Os Melhores Itens Geek Estão Aqui</h2>
+    <p>Explore uma seleção incrível de produtos geek para todos os gostos.</p>
+</section>
+
+<div class="content">
+    <div class="card">
+        <img src="https://via.placeholder.com/300x300" alt="Produto Geek 1">
+        <h3>Produto Geek 1</h3>
+        <p>Descrição breve do produto geek que está em destaque na loja.</p>
+        <p class="price">R$ 99,99</p>
+        <button>Comprar Agora</button>
+    </div>
+    <div class="card">
+        <img src="https://via.placeholder.com/300x300" alt="Produto Geek 2">
+        <h3>Produto Geek 2</h3>
+        <p>Descrição breve do produto geek que está em destaque na loja.</p>
+        <p class="price">R$ 149,99</p>
+        <button>Comprar Agora</button>
+    </div>
+    <div class="card">
+        <img src="https://via.placeholder.com/300x300" alt="Produto Geek 3">
+        <h3>Produto Geek 3</h3>
+        <p>Descrição breve do produto geek que está em destaque na loja.</p>
+        <p class="price">R$ 89,99</p>
+        <button>Comprar Agora</button>
+    </div>
+    <div class="card">
+        <img src="https://via.placeholder.com/300x300" alt="Produto Geek 4">
+        <h3>Produto Geek 4</h3>
+        <p>Descrição breve do produto geek que está em destaque na loja.</p>
+        <p class="price">R$ 199,99</p>
+        <button>Comprar Agora</button>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2024 Geek Store. Todos os direitos reservados.</p>
+    <div class="social-icons">
+        <a href="https://www.facebook.com" target="_blank">Facebook</a>
+        <a href="https://www.twitter.com" target="_blank">Twitter</a>
+        <a href="https://www.instagram.com" target="_blank">Instagram</a>
+    </div>
+</footer>
+
+</body>
+</html>
